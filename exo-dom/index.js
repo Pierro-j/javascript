@@ -1,10 +1,13 @@
+monBouton = document.getElementById('monBouton')
+paragraphe = document.getElementById('MonParagraphe')
+
 
 // ²Show an allert when monBoutton clicked
 monBouton.addEventListener("click", () => {
     alert("Button clicked");
+    paragraph.textContent = 'Je suis un paragraphe modifié'
 })
 
-monParagraphe.textContent = 'Je suis un paragraphe modifié'
 
 
 
