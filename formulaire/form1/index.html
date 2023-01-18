@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="form-style-3">
+    <form id="form" onsubmit="return validateForm()">
+        <label for="name">Nom:</label>
+        <input class="input-field" type="text" id="nom" name="name" required>
+        <div id="nameError" class="error"></div>
+        
+        <label for="email">Adresse électronique:</label>
+        <input class="input-field" type="email" id="email" name="email" required>
+        <div id="emailError" class="error"></div>
+        
+        <label for="phone">Numéro de téléphone:</label>
+        <input class="input-field" type="tel" id="phone" name="phone" required>
+        <div id="phoneError" class="error"></div>
+        
+        <label for="password">Mot de passe:</label>
+        <input class="input-field" type="password" id="password" name="password" required>
+        <div id="passwordError" class="error"></div>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Effacer" onclick="clearForm()">
+      </form>
+
+    </div>
+      
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
